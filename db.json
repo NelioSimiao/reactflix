@@ -15,6 +15,15 @@
         "cor": "#6BF1FF",
         "descricao":"Uma categoria Bacana"
 
+      },
+
+      {
+        "id": 3,
+        "nome":"Full stack developer",
+        "titulo": "beck-end",
+        "cor": "#6BF1FF",
+        "descricao":"Uma categoria Bacana"
+
       }
      ],
     "videos": [
