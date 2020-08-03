@@ -29,10 +29,14 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    fetch('http://localhost:3004/categorias')
+    const URL_TOP = window.location.hostname.includes('localhost')
+      ? 'http://localhost:3004/categorias'
+      : 'https://devnelioflix.herokuapp.com/categorias';
+    fetch(URL_TOP)
       .then(async (responseServer) => {
         const resposta = await responseServer.json();
         setCategorias([...resposta]);
+        console.log(categorias);
       });
   }, []);
 
